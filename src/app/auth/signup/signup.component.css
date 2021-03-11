@@ -1,0 +1,148 @@
+.bg-img{
+    background: url(/assets/icons/Group\ 296.png);
+    background-size: 100%;
+}
+
+
+.job, .employee{
+    
+    background-color: transparent;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    color: #00B876;
+}
+
+.active{
+  color: #ffffff;
+  position: relative;
+    background-color: #00B876;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-radius: 0px 30px 30px 0px;
+}
+
+
+
+
+.border-white{
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+}
+
+
+.form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.input-img{
+    margin-left: -30px;
+}
+
+.form-control::placeholder{
+    color: #ffffff;
+}
+
+.link{
+  color:  #F88E13;
+  text-decoration: underline;
+}
+
+
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 16px 'Open Sans', Arial, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00B876;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.bg-fb{
+  background-color: #3B5998;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  border-radius: 20px 0px 0px 20px;
+  
+}
+
+.bg-gmail{
+  background-color: #ffffff;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  border-radius: 0px;
+}
+
+.bg-insta{
+  background: radial-gradient(95.4% 102.06% at 20.13% 85%, #FAE100 0%, #FADC04 5.44%, #FBCE0E 11.67%, #FCB720 18.29%, #FE9838 25.14%, #FF7950 30.54%, #FF1C74 49.22%, #6C1CD1 100%);
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  border-radius: 0px;
+}
+
+
+
+.bg-linked{
+  background-color: #2E82BD;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  border-radius: 0px 20px 20px 0px;
+  
+}
+
+.form-control.is-invalid {
+
+  background-image: none !important;
+  
+}
+
+
+

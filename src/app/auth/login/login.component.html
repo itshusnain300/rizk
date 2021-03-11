@@ -1,0 +1,226 @@
+<section class="bg-img">
+    <div class="container">
+        <!-- <div class="row py-5 justify-content-center">
+            <div class="">
+                <div class="d-flex border-white">
+                    <div class="job">
+                       <h4>i’m Employee</h4>
+                    </div>
+                    <div class="employee active">
+                        <h4>i’m Employer</h4>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <div class="row justify-content-center">
+            <div class="col">
+                 <!-- Account Type -->
+                 <div class="account-type">
+                    <div>
+                        <input type="radio" [value]="'Consultant'" formControlName="role" id="Consultant"
+                            class="account-type-radio" />
+                        <label for="Consultant" class="ripple-effect-dark"><i
+                                class="icon-material-outline-account-circle"></i> Employee</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="Company" [value]="'Company'" formControlName="role"
+                            class="account-type-radio" />
+                        <label for="Company" class="ripple-effect-dark"><i
+                                class="icon-material-outline-business-center"></i>Employeer</label>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs py-4">
+            <li [ngbNavItem]="1">
+              <!-- <a ngbNavLink>i’m Employee</a> -->
+              <ng-template ngbNavContent>
+                <form action="" [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div  class="row  justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h3 class="text-white mb-2">Sign Up</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control"  formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" placeholder="Username" >
+                                <div class="input-group-append">
+                                    <span class="input-img">
+                                        <img src="../../../assets/icons/user 1.png" width="20px" height="20px" alt="">
+            
+                                    </span>
+                                </div>
+                                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                                    <div *ngIf="f.username.errors.required">Username is required</div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div  class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" formControlName="password" [ngClass]="{ 'is-invalid' : submitted && f.password.errors}" placeholder="Password" >
+                                <div class="input-group-append">
+                                    <span class="input-img">
+                                        <img src="../../../assets/icons/lock_24px.png" width="18px" height="20px" alt="">
+            
+                                    </span>
+                                </div>
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required" >Password is required</div>
+                                </div>
+                              </div>
+                        </div>
+                       
+                    </div>
+                    <div  class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" formControlName="confirmPassword" [ngClass]="{ 'is-invalid' : submitted && f.confirmPassword.errors}" placeholder="Reapeat Password" >
+                                <div class="input-group-append">
+                                    <span class="input-img">
+                                        <img src="../../../assets/icons/lock_24px.png" width="18px" height="20px" alt="">
+            
+                                    </span>
+                                </div>
+                                <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                                    <div *ngIf="f.confirmPassword.errors.required" >Password is required</div>
+                                    <div *ngIf="f.confirmPassword.errors.confirmPasswordValidator" >Password not match</div>
+                                </div>
+                              </div>
+                        </div>
+                       
+                    </div>
+                    <div class="row justify-content-center my-3">
+                        <div class="col-md-6">
+                            
+                            <input formControlName="terms" [ngClass]="{ 'is-invalid': submitted && f.terms.errors}" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label class="text-white" for="vehicle1">By clicking here, you agree to <a class="link" href="">terms & condition</a> and <a class="link" href="">privacy policy</a>.</label>
+                            <div *ngIf="submitted && f.terms.errors" class="invalid-feedback">
+                                <div *ngIf="f.terms.errors.required">Checkbox is required</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center my-3">
+                        <div class="col-md-5">
+                            <button  (click)='onSubmit()' class="btn my-3 btn-success py-3 btn-block rounded-pill">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+              </ng-template>
+            </li>
+            <li [ngbNavItem]="2">
+              <!-- <a ngbNavLink>i’m Employer</a> -->
+              <ng-template ngbNavContent>
+                <form action="" [formGroup]="form" (ngSubmit)="onSubmit()">
+                    <div  class="row  justify-content-center">
+                        <div class="col-md-8 text-center">
+                            <h3 class="text-white mb-2">Sign Up</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control"  formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" placeholder="Username" >
+                                <div class="input-group-append">
+                                    <span class="input-img">
+                                        <img src="../../../assets/icons/user 1.png" width="20px" height="20px" alt="">
+            
+                                    </span>
+                                </div>
+                                <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+                                    <div *ngIf="f.username.errors.required">Username is required</div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div  class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" formControlName="password" [ngClass]="{ 'is-invalid' : submitted && f.password.errors}" placeholder="Password" >
+                                <div class="input-group-append">
+                                    <span class="input-img">
+                                        <img src="../../../assets/icons/lock_24px.png" width="18px" height="20px" alt="">
+            
+                                    </span>
+                                </div>
+                                <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                                    <div *ngIf="f.password.errors.required" >Password is required</div>
+                                </div>
+                              </div>
+                        </div>
+                       
+                    </div>
+                    <div  class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="input-group mb-3">
+                                <input type="password" class="form-control" formControlName="confirmPassword" [ngClass]="{ 'is-invalid' : submitted && f.confirmPassword.errors}" placeholder="Reapeat Password" >
+                                <div class="input-group-append">
+                                    <span class="input-img">
+                                        <img src="../../../assets/icons/lock_24px.png" width="18px" height="20px" alt="">
+            
+                                    </span>
+                                </div>
+                                <div *ngIf="submitted && f.confirmPassword.errors" class="invalid-feedback">
+                                    <div *ngIf="f.confirmPassword.errors.required" >Password is required</div>
+                                    <div *ngIf="f.confirmPassword.errors.confirmPasswordValidator" >Password not match</div>
+                                </div>
+                              </div>
+                        </div>
+                       
+                    </div>
+                    <div class="row justify-content-center my-3">
+                        <div class="col-md-6">
+                            
+                            <input formControlName="terms" [ngClass]="{ 'is-invalid': submitted && f.terms.errors}" type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label class="text-white" for="vehicle1">By clicking here, you agree to <a class="link" href="">terms & condition</a> and <a class="link" href="">privacy policy</a>.</label>
+                            <div *ngIf="submitted && f.terms.errors" class="invalid-feedback">
+                                <div *ngIf="f.terms.errors.required">Checkbox is required</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center my-3">
+                        <div class="col-md-5">
+                            <button  (click)='onSubmit1()' class="btn my-3 btn-success py-3 btn-block rounded-pill">Sign Up</button>
+                        </div>
+                    </div>
+                </form>
+              </ng-template>
+            </li>
+            
+          </ul>
+        
+          <div [ngbNavOutlet]="nav" class="mt-2"></div>
+        <div class="row justify-content-center">
+            <div class="col-md-2 text-center">
+                <div>
+                    <img src="../../../assets/icons/Group 171.png" width="60px" alt="">
+                </div>
+                <div>
+                    <h5 class="text-white mb-3">Continue with</h5>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-5 pl-4">
+                <ul class="d-flex list-unstyled">
+                    <li class="bg-fb">
+                        <img src="../../../assets/icons/facebook 1.png" class="m-auto"  width="25px" alt="">
+                    </li>
+                    <li class="bg-gmail">
+                        <img src="../../../assets/icons/Group 44.png" class="m-auto"  width="25px" alt="">
+                    </li>
+                    <li class="bg-insta">
+                        <img src="../../../assets/icons/Group.png" class="m-auto"  width="25px" alt="">
+                    </li>
+                    <li class="bg-linked">
+                        <img src="../../../assets/icons/Group (1).png" class="m-auto"  width="25px" alt="">
+                    </li>
+                  
+                </ul>
+            </div>
+        </div>
+        <div class="row pb-4 justify-content-center">
+            <div class="col-md-5 text-center">
+                <a class="text-white" href="">Already user? Login</a>
+            </div>
+        </div>
+    </div>
+</section>

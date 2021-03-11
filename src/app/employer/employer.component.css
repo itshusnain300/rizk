@@ -1,0 +1,278 @@
+/* first checkbox */
+
+.styled-checkbox-1 {
+    position: absolute;
+    opacity: 0;
+  }
+  .styled-checkbox-1 + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    color: #66C8FF;
+    font-size: 20px;
+  }
+  .styled-checkbox-1 + label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: #dfdede;
+  }
+  .styled-checkbox-1:hover + label:before {
+    background: #66C8FF;
+  }
+  .styled-checkbox-1:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+  .styled-checkbox-1:checked + label:before {
+    background: #66C8FF;
+  }
+  .styled-checkbox-1:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+  .styled-checkbox-1:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+  .styled-checkbox-1:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+ /* 2nd checkbox */
+
+ 
+.styled-checkbox-2 {
+    position: absolute;
+    opacity: 0;
+  }
+  .styled-checkbox-2 + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    color: #00B876;
+    font-size: 20px;
+
+  }
+  .styled-checkbox-2 + label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: #dfdede;
+  }
+  .styled-checkbox-2:hover + label:before {
+    background: #00B876;
+  }
+  .styled-checkbox-2:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+  .styled-checkbox-2:checked + label:before {
+    background: #00B876;
+  }
+  .styled-checkbox-2:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+  .styled-checkbox-2:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+  .styled-checkbox-2:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+ /* 3rd checkbox */
+
+ 
+.styled-checkbox-3 {
+    position: absolute;
+    opacity: 0;
+  }
+  .styled-checkbox-3 + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    color: #FFC01F;
+    font-size: 20px;
+
+  }
+  .styled-checkbox-3 + label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 20px;
+    height: 20px;
+    background: #dfdede;
+  }
+  .styled-checkbox-3:hover + label:before {
+    background: #FFC01F;
+  }
+  .styled-checkbox-3:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+  .styled-checkbox-3:checked + label:before {
+    background: #FFC01F;
+  }
+  .styled-checkbox-3:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+  .styled-checkbox-3:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+  .styled-checkbox-3:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 12px;
+    background: white;
+    width: 2px;
+    height: 2px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(45deg);
+  }
+
+  
+  .unstyled {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+ 
+  
+  .centered {
+    width: 300px;
+    margin: auto;
+  }
+  
+  .title {
+    text-align: center;
+    color: #4571ec;
+  }
+
+  .job-title{
+    color: #272D4E;
+    font-size: 26px;
+
+}
+
+.job-icon{
+    color: #00B876;
+    font-size: 18px;
+}
+.full-time{
+    color: #00B876;
+    font-size: 21px;
+}
+
+.part-time{
+    color: #FFC01F;
+    font-size: 21px;
+}
+
+.freelancer{
+    color: #66C8FF;
+    font-size: 21px;
+}
+.internship{
+    color: #EA4A49;
+    font-size: 21px;
+}
+
+.job-site{
+    color: #272D4E;
+    font-size: 18px;
+}
+.job-markup{
+    color: #272D4E;
+    font-size: 15px;
+}
+.job-location{
+    color: #272D4E;
+    font-size: 15px;
+}
+
+.job-des{
+    color: #F88E13;
+    font-size: 18px;
+
+}
+.job-time{
+    color: #969DCB;
+    font-size: 16px;
+}
+.job-clock{
+    color: #969DCB;
+    font-size: 16px;
+}
+.img-div{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.job-img{
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
+}
+
+.img-right{
+    text-align: -webkit-right;
+}
+
+.find-job{
+    
+    border: 1px solid #00B876;
+    background-color: #ffffff;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.find-job h4{
+    color: #00B876;
+}
+.find-employee{
+    background-color: #00B876;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+
+.find-employee h4{
+    color: #ffffff;
+}
+
+.employee-row{
+  border-bottom: 1px solid #b8b8b8;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.employee-row:hover{
+  box-shadow: 0px 0px 30px rgba(204, 213, 233, 0.55);
+}

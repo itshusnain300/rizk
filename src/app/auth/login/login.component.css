@@ -1,0 +1,310 @@
+.bg-img{
+    background: url(/assets/icons/Group\ 296.png);
+    background-size: 100%;
+}
+
+
+.job, .employee{
+    
+    background-color: transparent;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    color: #00B876;
+}
+/* 
+.active{
+  color: #ffffff;
+  position: relative;
+    background-color: #00B876;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-radius: 0px 30px 30px 0px;
+} */
+
+
+
+
+.border-white{
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+}
+
+
+.form-control{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.form-control:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.input-img{
+    margin-left: -30px;
+}
+
+.form-control::placeholder{
+    color: #ffffff;
+}
+
+.link{
+  color:  #F88E13;
+  text-decoration: underline;
+}
+
+
+
+/*Checkboxes styles*/
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 16px 'Open Sans', Arial, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #00B876;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.bg-fb{
+  background-color: #3B5998;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  border-radius: 20px 0px 0px 20px;
+  
+}
+
+.bg-gmail{
+  background-color: #ffffff;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  border-radius: 0px;
+}
+
+.bg-insta{
+  background: radial-gradient(95.4% 102.06% at 20.13% 85%, #FAE100 0%, #FADC04 5.44%, #FBCE0E 11.67%, #FCB720 18.29%, #FE9838 25.14%, #FF7950 30.54%, #FF1C74 49.22%, #6C1CD1 100%);
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  border-radius: 0px;
+}
+
+
+
+.bg-linked{
+  background-color: #2E82BD;
+  padding: 10px 40px 10px 40px;
+  text-align: center;
+  border-radius: 0px 20px 20px 0px;
+  
+}
+
+.form-control.is-invalid {
+
+  background-image: none !important;
+  
+}
+
+
+
+
+.nav-tabs .nav-link.active {
+  color: #ffffff;
+  background-color: #00B876;
+  border-color: #ddd #ddd #fff;
+  /* border-bottom: 3px solid #00B876; */
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: -1px;
+  border: none;
+  color: #00B876;
+  font-size: 22px;
+  
+
+ 
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+ul{
+  justify-content: center;
+  list-style: none;
+}
+
+
+
+
+
+
+.account-type {
+  display: flex;
+  width: calc(100% + 20px);
+  margin: 0 0 20px;
+}
+.account-type div {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.account-type input.account-type-radio:empty {
+  display: none;
+}
+input[type=radio] {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  box-shadow: none;
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input {
+  transition: all .1s ease-in-out;
+}
+input[type=radio] {
+  height: 48px;
+  line-height: 48px;
+  padding: 0 20px;
+  outline: 0;
+  font-size: 16px;
+  color: grey;
+  margin: 0 0 16px;
+  max-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  background-color: #fff;
+  font-weight: 500;
+  opacity: 1;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 1px 4px 0 rgb(0 0 0 / 12%);
+}
+
+.account-type input.account-type-radio:checked~label {
+  color: #fff;
+  background-color: #47bb67;
+}
+.account-type input.account-type-radio:empty~label {
+  position: relative;
+  float: left;
+  text-align: center;
+  padding: 10px 10px 11px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 4px;
+  color: #888;
+  transition: .4s;
+  height: 48px;
+  line-height: 28px;
+  overflow: hidden;
+}
+.account-type label {
+  border-radius: 3px;
+  border: none;
+  background-color: #f2f2f2;
+  width: 100%;
+}
+.ripple-effect, .ripple-effect-dark {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+label, legend {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.account-type input.account-type-radio:empty~label:after, .account-type input.account-type-radio:empty~label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 4px;
+  font-size: 22px;
+  background: 0 0;
+  z-index: 100;
+  opacity: 0;
+}
+
+.account-type input.account-type-radio:empty~label:before {
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 48px;
+  border-radius: 4px;
+  font-size: 22px;
+  background: 0 0;
+  z-index: 100;
+  opacity: 0;
+}
+
+.account-type input.account-type-radio:checked~label {
+  color: #fff;
+  background-color: #47bb67;
+}
+.account-type input.account-type-radio~label:hover {
+  color: #289c41;
+  background-color: #e4f6e9;
+}

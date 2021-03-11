@@ -1,6 +1,6 @@
 {
-  "name": "rizk",
-  "version": "0.0.0",
+  "name": "yes",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -12,13 +12,21 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.1.1",
+    "@angular/cdk": "^10.2.7",
     "@angular/common": "~10.1.1",
     "@angular/compiler": "~10.1.1",
     "@angular/core": "~10.1.1",
     "@angular/forms": "~10.1.1",
+    "@angular/localize": "~10.1.1",
+    "@angular/material": "^10.2.7",
     "@angular/platform-browser": "~10.1.1",
     "@angular/platform-browser-dynamic": "~10.1.1",
     "@angular/router": "~10.1.1",
+    "@ng-bootstrap/ng-bootstrap": "^8.0.4",
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.5.1",
+    "mongodb": "^3.6.4",
+    "nodemon": "^2.0.7",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
@@ -42,5 +50,9 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.0.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.",
+  "main": "app.js",
+  "author": "husnain",
+  "license": "ISC"
 }

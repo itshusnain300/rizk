@@ -1,0 +1,21 @@
+.navbar{
+   background: transparent;
+}
+
+.nav-link{
+    color: #000000;
+    font-weight: 500;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.custom-padding{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.active{
+    color: #ffffff;
+    background-color: #00B876;
+    border-radius: 5px;
+}

@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row card my-4">
+    <div class="d-flex my-3 ml-5">
+      <div>
+        <img src="../../../assets/images/Ellipse 6.png" width="150px" height="150px" alt="">
+      </div>
+      <div class="mt-md-5 ml-3">
+       <h2>Romana</h2>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <div class=" border-0 px-md-5">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+          <li [ngbNavItem]="1">
+            <a ngbNavLink>Dashboard</a>
+            <ng-template ngbNavContent>
+              <app-dashboard></app-dashboard>
+            </ng-template>
+          </li>
+          <li [ngbNavItem]="2">
+            <a ngbNavLink>Edit Profile</a>
+            <ng-template ngbNavContent>
+              <app-edit-profile></app-edit-profile>
+            </ng-template>
+          </li>
+          <li [ngbNavItem]="3">
+            <a ngbNavLink>Change Password</a>
+            <ng-template ngbNavContent>
+              <app-change-password></app-change-password>
+            </ng-template>
+          </li>
+          <li [ngbNavItem]="4">
+            <a ngbNavLink>Resume</a>
+            <ng-template ngbNavContent>
+              <app-resume></app-resume>
+            </ng-template>
+          </li>
+        </ul>
+
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+      </div>
+    </div>
+  </div>
+</div>
