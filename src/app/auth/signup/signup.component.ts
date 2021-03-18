@@ -9,104 +9,60 @@ import { ConfirmPasswordValidator } from 'src/app/_helpers/confirm-password';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
-
+  
+  active = 1;
   isFormSubmit = false;
+
   form: FormGroup;
-  error: any = null;
-  isLoader:boolean=false
+  loading: boolean;
+  submitted: boolean;
+  
 
-
-
-  isConsultant: boolean = true;
-  isCompnany: boolean = false;
-  activeTab = 0;
-
-  constructor(private formBuilder: FormBuilder,
-    private router: Router) { }
+  constructor(
+    private formBuilder: FormBuilder,
+    private route: ActivatedRoute,
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
     this.isFormSubmit = false;
     this.create();
-    this.form.controls.role.valueChanges
-      .subscribe(v => {
+    
 
-        this.f.name.setValue(null);
-        if (v === 'Company') {
-          this.activeTab = 1
-        }
-        else if (v === 'Consultant') {
-          this.activeTab = 0;
-        }
-        else {
-          this.activeTab = 2;
-        }
-        this.toggleValidators(v);
-      });
+    
   }
 
-  create() {
+  create(){
     this.form = this.formBuilder.group({
-      name: [null, [Validators.required]],
-      corporateNumber: [''],
-      personName: [''],
-      department: [''],
-      email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required]],
-      confirmPassword: ['', [Validators.required]],
-      phone: ['', [Validators.required]],
-      role: ['Consultant', Validators.required]
-    }, {
+      email: [''],
+      password: ['', Validators.required],
+      terms: ['', Validators.required],
+      confirmPassword: ['', Validators.required],
+    },
+    {
       validator: ConfirmPasswordValidator('password', 'confirmPassword')
     });
   }
-
-  // Toggles Validator's for Compnay and Consultant
-  toggleValidators(value) {
-    if (value === 'Consultant') {
-      this.form.get('corporateNumber').setValidators([]);
-      this.form.get('corporateNumber').updateValueAndValidity();
-
-      this.form.get('personName').setValidators([]);
-      this.form.get('personName').updateValueAndValidity();
-
-      this.form.get('department').setValidators([]);
-      this.form.get('department').updateValueAndValidity();
-    }
-    if (value === 'Company') {
-      this.form.get('corporateNumber').setValidators([Validators.required]);
-      this.form.get('corporateNumber').updateValueAndValidity();
-
-      this.form.get('personName').setValidators([Validators.required]);
-      this.form.get('personName').updateValueAndValidity();
-
-      this.form.get('department').setValidators([]);
-      this.form.get('department').updateValueAndValidity();
-    }
-    if (value === 'University') {
-      this.form.get('corporateNumber').setValidators([]);
-      this.form.get('corporateNumber').updateValueAndValidity();
-
-      this.form.get('personName').setValidators([Validators.required]);
-      this.form.get('personName').updateValueAndValidity();
-
-      this.form.get('department').setValidators([Validators.required]);
-      this.form.get('department').updateValueAndValidity();
-    }
-  }
-
+  
   get f() { return this.form.controls; }
-
   onSubmit() {
-    this.isFormSubmit = true;
-
-    this.isLoader=true
+    this.isFormSubmit = false;
+  
+   
     if (this.form.invalid) {
       return;
+      
     }
-    // console.log(this.form.value);
-    
-    
-  }
 
+  }
+  onSubmit1() {
+    this.submitted = true;
+    console.log(this.form.value);
+
+    if (this.form.invalid) {
+      return;
+      
+    }
+
+  }
 }

@@ -1,4 +1,4 @@
-.job-title{
+/* .job-title{
     color: #272D4E;
     font-size: 26px;
 
@@ -68,4 +68,85 @@
 .img-right{
     text-align: -webkit-right;
 }
+ */
 
+ 
+ .job-title{
+    color: #272D4E;
+    font-size: 24px;
+
+}
+
+.detail_row{
+    display: flex;
+    border-bottom: 1px solid #EBEFFC;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 0px;
+    padding: 20px 20px 20px 20px;
+}
+
+.job-icon{
+    color: #00B876;
+    font-size: 18px;
+}
+.full-time{
+    color: #00B876;
+    font-size: 20px;
+}
+
+.part-time{
+    color: #FFC01F;
+    font-size: 20px;
+}
+
+.freelancer{
+    color: #66C8FF;
+    font-size: 20px;
+}
+.internship{
+    color: #EA4A49;
+    font-size: 20px;
+}
+
+.job-site{
+    color: #272D4E;
+    font-size: 18px;
+}
+.job-markup{
+    color: #272D4E;
+    font-size: 15px;
+}
+.job-location{
+    color: #272D4E;
+    font-size: 15px;
+}
+
+.job-des{
+    color: #F88E13;
+    font-size: 18px;
+
+}
+.job-time{
+    color: #969DCB;
+    font-size: 16px;
+}
+.job-clock{
+    color: #969DCB;
+    font-size: 16px;
+}
+.img-div{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+
+.job-img{
+    height: 130px;
+    width: 130px;
+    object-fit: contain;
+}
+
+.img-right{
+    text-align: -webkit-right;
+}

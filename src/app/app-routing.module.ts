@@ -14,10 +14,10 @@ const routes: Routes = [
     component: LayoutComponent,
     children: [
       // { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
       { path: 'employee', component: EmployeeComponent },
       { path: 'employer', component: EmployerComponent },
       { path: 'how-it-works', component: WorksComponent },
-      { path: 'home', component: HomeComponent },
       { path: 'job-details', component: JobDetailsComponent },
       { path: 'employer-details', component: EmployerDetailComponent },
       { path: 'profile', loadChildren: () => import('./profile/profile.module').then(m => m.ProfileModule) },

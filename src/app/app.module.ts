@@ -16,6 +16,7 @@ import { JobDetailsComponent } from './job-details/job-details.component';
 import { EmployerDetailComponent } from './employer-detail/employer-detail.component';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     NgbModule,
     NoopAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
     
   ],
   providers: [

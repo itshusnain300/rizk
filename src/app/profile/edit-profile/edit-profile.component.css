@@ -77,3 +77,9 @@ font-size: 18px;
 
 color: #272D4E;
 }
+
+.calendar img{
+    position: absolute;
+    margin-top: 8px;
+    right: 16px;
+}

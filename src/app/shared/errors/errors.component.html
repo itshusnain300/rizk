@@ -1,0 +1,8 @@
+<div *ngIf="isSubmitted && form_control.errors">
+    <span class="text-danger" *ngIf="form_control.errors.required">Field is required</span>
+    <span class="text-danger" *ngIf="form_control.errors.email">Email is required </span>
+    <span class="text-danger" *ngIf="form_control.errors.password">Password is required </span>
+    <span class="text-danger" *ngIf="form_control.errors.confirmPasswordValidator">
+        Password not match
+    </span>
+</div>

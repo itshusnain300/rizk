@@ -108,35 +108,26 @@ input[type="checkbox"]:checked + label:before {
 
 .bg-fb{
   background-color: #3B5998;
-  padding: 10px 40px 10px 40px;
+  padding: 12px 50px 12px 50px;
   text-align: center;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 30px 0px 0px 30px;
   
-}
-
-.bg-gmail{
+  }
+  
+  .bg-gmail{
   background-color: #ffffff;
-  padding: 10px 40px 10px 40px;
+  padding: 12px 50px 12px 50px;
   text-align: center;
   border-radius: 0px;
-}
-
-.bg-insta{
-  background: radial-gradient(95.4% 102.06% at 20.13% 85%, #FAE100 0%, #FADC04 5.44%, #FBCE0E 11.67%, #FCB720 18.29%, #FE9838 25.14%, #FF7950 30.54%, #FF1C74 49.22%, #6C1CD1 100%);
-  padding: 10px 40px 10px 40px;
-  text-align: center;
-  border-radius: 0px;
-}
-
-
-
-.bg-linked{
-  background-color: #2E82BD;
-  padding: 10px 40px 10px 40px;
-  text-align: center;
-  border-radius: 0px 20px 20px 0px;
+  }
   
-}
+  .bg-insta{
+  background: radial-gradient(95.4% 102.06% at 20.13% 85%, #FAE100 0%, #FADC04 5.44%, #FBCE0E 11.67%, #FCB720 18.29%, #FE9838 25.14%, #FF7950 30.54%, #FF1C74 49.22%, #6C1CD1 100%);
+  padding: 12px 50px 12px 50px;
+  text-align: center;
+  border-radius: 0px 30px 30px 0px;
+  }
+  
 
 .form-control.is-invalid {
 
@@ -145,4 +136,48 @@ input[type="checkbox"]:checked + label:before {
 }
 
 
+
+
+
+.nav-tabs .nav-link.active {
+  color: #ffffff;
+  background-color: #00B876;
+  /* border-color: #ddd #ddd #fff; */
+  border: 1px solid #ffffff;
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: -1px;
+  border: none;
+  color: #00B876;
+  font-size: 18px;
+  font-weight: bold;
+
+ 
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+ul{
+  justify-content: center;
+}
+
+ul li a{
+  font-weight: 400 !important;
+  font-size: 22px !important;
+}
+
+
+.active{
+  color: #ffffff;
+  position: relative;
+    background-color: #00B876;
+    width: 200px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 8px;
+    border-radius:30px;
+}
 
